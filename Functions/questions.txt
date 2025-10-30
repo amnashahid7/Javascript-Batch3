@@ -1,0 +1,30 @@
+Write a function sayHello() that prints "Hello, World!" to the console.
+
+Write a function greet(name) that prints "Hello, [name]!".
+
+Create a function add(a, b) that returns the sum of two numbers.
+
+Write a function multiply(a, b) that returns the product of two numbers.
+
+Create a function square(num) that returns the square of a number.
+
+
+
+
+
+Write a function isEven(number) that returns true if the number is even, otherwise false.
+
+Create a function maxOfTwo(a, b) that returns the larger number.
+
+Write a function grade(score) that returns "A", "B", "C", "D", or "F" based on the score range.
+
+Write a function checkAge(age) that logs "You are an adult" if age ≥ 18, otherwise "You are a minor".
+
+Create a function getFullName(first, last) that returns the full name. 
+
+Create a function average(a, b, c) that returns the average of three numbers.
+
+
+Write an arrow function double(num) that returns double the value.
+Write an arrow function getLastElement(arr) that returns the last element of an array.
+Write a function calculateDiscount(price, discountPercent) that returns the final price after discount.
