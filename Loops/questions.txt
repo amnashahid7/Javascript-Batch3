@@ -1,0 +1,62 @@
+Print each element in an array using forEach.
+
+Given const numbers = [2, 4, 6, 8], print each number multiplied by 2.
+
+Given const fruits = ['apple', 'banana', 'mango'], print: Fruit name is apple, etc.
+
+Use forEach to sum up all elements in an array.
+
+
+
+Given an array of objects like
+
+const users = [{name: 'Ali', age: 20}, {name: 'Sara', age: 25}];
+Print each user’s name and age.
+
+Create a new array of uppercased strings using forEach.
+
+Use forEach to find and print only the even numbers from an array.
+
+Count how many times a certain element appears in an array (e.g. “apple” in a fruit list).
+
+
+
+Print all keys of an object.
+
+const person = {name: 'Ali', age: 21, city: 'Lahore'};
+
+
+Print all values of the object.
+Print both key and value in the format: name: Ali.
+
+
+
+
+Given an object of product prices, calculate the total cost.
+
+const prices = {apple: 100, banana: 80, mango: 120};
+
+
+Create a string of all keys separated by commas ("name, age, city").
+
+Check if an object has a key called "age" using a for...in loop
+
+
+
+
+
+Print each element of an array using for...of.
+
+Print each character of a string.
+
+Given const arr = [1, 2, 3, 4], print their squares using for...of.
+
+Intermediate
+
+Given a string "hello world", count how many vowels are in it.
+
+Loop through a Set and print each unique element.
+
+Loop through a Map and print both key and value.
+
+const map = new Map([['a', 1], ['b', 2], ['c', 3]]);
