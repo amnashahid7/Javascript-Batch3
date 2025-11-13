@@ -1,0 +1,42 @@
+1. Combine filter() + map() to get names of students who passed.
+
+const students = [
+  { name: "Ali", score: 40 },
+  { name: "Sara", score: 70 },
+  { name: "Ahmed", score: 90 }
+];
+
+
+2. Use reduce() to group users by age.
+
+const users = [
+  { name: "Ali", age: 20 },
+  { name: "Sara", age: 20 },
+  { name: "Ahmed", age: 30 }
+];
+// Expected: { 20: ["Ali", "Sara"], 30: ["Ahmed"] };
+
+3. Use map() and reduce() together to calculate the average age.
+
+const users = [
+  { name: "Ali", age: 25 },
+  { name: "Sara", age: 35 },
+  { name: "Ahmed", age: 30 }
+]
+
+4.Return users who are active and older than 25.
+
+const users = [
+  { name: "Ali", age: 20, active: true },
+  { name: "Sara", age: 30, active: true },
+  { name: "Ahmed", age: 27, active: false }
+];
+
+5. Write a function filterByKey(arr, key) that removes objects missing that key.
+
+const data = [
+  { name: "Ali", age: 25 },
+  { name: "Sara" },
+  { name: "Ahmed", age: 30 }
+];
+// filterByKey(data, "age") → [{ name: "Ali", age: 25 }, { name: "Ahmed", age: 30 }]
