@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="parent">
+        <h1 class="firstHeading">Heelo WOrld</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus natus alias ullam modi omnis dolorum nulla ab officiis doloremque est nihil illo debitis, ratione voluptatum veniam. Vitae, accusantium? Esse, fuga.</p>
+    </div>
+
+
+    console.log(window)
+
+undefined
+console.log(document)​
+undefined
+console.log(document.links)
+
+undefined
+console.log(document.links[0])
+VM577:1 <a class=​"mw-jump-link" href=​"#bodyContent">​Jump to content​</a>​
+undefined
+console.log(document.getElementById("firstHeading")
+VM811:1 Uncaught SyntaxError: missing ) after argument listUnderstand this error
+console.log(document.getElementById("firstHeading"))
+VM819:1 <h1 id=​"firstHeading" class=​"firstHeading mw-first-heading">​…​</h1>​
+undefined
+console.log(document.getElementById("firstHeading").innerHTML = <h1>Yousaf</h1>)
+VM928:1 Uncaught SyntaxError: Unexpected token '<'Understand this error
+document.getElementById("firstHeading")
+<h1 id=​"firstHeading" class=​"firstHeading mw-first-heading">​…​</h1>​
+document.getElementById("firstHeading").innerHTML = "<h1>Yousaf</h1>"
+'<h1>Yousaf</h1>'
+</body>
+</html>
