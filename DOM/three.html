@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1 id="title" class="heading">Javascript DOM Lecture 3 <span style="display: none;">Heeloo</span></h1>
+    <h1>Ahamad</h1>
+    <h1>Raza</h1>
+    <p class="para">Lorem ipsum dolor sit amet.</p>
+    <p class="para">Lorem ipsum dolor sit amet.</p>
+    <p class="para">Lorem ipsum dolor sit amet.</p>
+    <p class="para">Lorem ipsum dolor sit amet.</p>
+
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>Four</li>
+    </ul>
+    <input type="text">
+    <input type="password" placeholder="password">
+</body>
+</html>
+
+
+<!-- 
+document.querySelector("h1")
+<h1 id=​"title" class=​"heading">​"Javascript DOM Lecture 3 "<span style=​"display:​ none;​">​Heeloo​</span>​</h1>​
+document.querySelector("#title")
+<h1 id=​"title" class=​"heading">​"Javascript DOM Lecture 3 "<span style=​"display:​ none;​">​Heeloo​</span>​</h1>​
+document.querySelector(".heading")
+<h1 id=​"title" class=​"heading">​…​</h1>​
+
+
+
+
+
+document.querySelector(".heading")
+document.querySelector("h1")
+document.querySelectorAll("h1")
+NodeList(3) [h1#title.heading, h1, h1]
+0
+: 
+h1#title.heading
+1
+: 
+h1
+2
+: 
+h1
+length
+: 
+3
+[[Prototype]]
+: 
+NodeList
+entries
+: 
+ƒ entries()
+forEach
+: 
+ƒ forEach()
+item
+: 
+ƒ item()
+keys
+: 
+ƒ keys()
+length
+: 
+(...)
+values
+: 
+ƒ values()
+constructor
+: 
+ƒ NodeList()
+Symbol(Symbol.iterator)
+: 
+ƒ values()
+Symbol(Symbol.toStringTag)
+: 
+"NodeList"
+get length
+: 
+ƒ length()
+[[Prototype]]
+: 
+Object
+let myArr= [1,2,3];
+undefined
+myArr
+(3) [1, 2, 3]
+0
+: 
+1
+1
+: 
+2
+2
+: 
+3
+length
+: 
+3
+[[Prototype]]
+: 
+Array(0)
+
+
+
+
+
+
+
+let ul= document.querySelector("ul")
+undefined
+ul;
+<ul>​<li>​::marker​"one"</li>​<li>​…​</li>​<li>​…​</li>​<li>​…​</li>​</ul>​
+let ul= document.querySelector("li")
+undefined
+ul;
+<li>​::marker​"one"</li>​
+let ul= document.querySelectorAll("li")
+undefined
+ul;
+NodeList(4) [li, li, li, li]
+
+
+
+
+
+let ul= document.querySelector("li")
+undefined
+ul;
+<li>​…​</li>​
+ul.style.color= "red"
+'red'
+
+
+
+
+
+let ul= document.querySelectorAll("li")
+undefined
+ul.style.color= "red"
+VM1525:1 Uncaught TypeError: Cannot set properties of undefined (setting 'color')
+    at <anonymous>:1:15
+(anonymous) @ VM1525:1Understand this error
+ul[2].style.color= "red"
+'red'
+ul[0].style.color= "red"
+'red'
+
+
+
+
+
+document.querySelector("input")
+<input type=​"text" fdprocessedid=​"oudl0f">​
+document.querySelector("input[type=password]")
+<input type=​"password" placeholder=​"password" fdprocessedid=​"xwjs5">​
+document.querySelector("li:first-child")
+<li>​::marker​"one"</li>​
+document.querySelector("li:nth-child(2)")
+<li>​::marker​"two"</li>​
+document.querySelector("li:last-child")
+<li>​::marker​"Four"</li>​
+
+
+
+
+ul.forEach((li)=>{
+    li.style.color= "white";
+    li.style.backgroundColor= "red";
+    li.style.padding= "10px";
+    li.style.fontSize= "15px"
+});
+
+-->
