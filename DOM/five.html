@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    let div= document.createElement("div");
+    div.className= "container";
+    div.id= "mainContainer";
+    div.style.width= "900px";
+    div.style.height= "200px";
+    div.style.backgroundColor= "black";
+    div.style.color= "white";
+    div.style.margin= "20px auto";
+    // div.innerText= "Learning=> How to create the element through the dom in the html";
+    let text= document.createTextNode("Learning=> How to create the element through the dom in the html");
+    div.appendChild(text);
+    document.body.appendChild(div);
+    console.log(div);
+    
+</script>
+</html>

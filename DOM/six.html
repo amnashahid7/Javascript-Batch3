@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Languages</h2>
+    <ul class="ulList" id="ulList">
+        <li>Javascript</li>
+    </ul>
+
+</body>
+<script>
+    function addLang(langName){
+        let li = document.createElement("li");
+        li.innerText= `${langName}`;
+        document.getElementById("ulList").appendChild(li);
+    }
+    addLang("Python");  
+
+
+    function addLangOpt(langNameOpt){
+        let li = document.createElement("li");
+        li.appendChild(document.createTextNode(langNameOpt));
+
+         // let text = document.createTextNode(`${langNameOpt}`)
+        // li.appendChild(text)
+
+         document.getElementById("ulList").appendChild(li);
+        
+    }
+    addLangOpt("C++");
+</script>
+</html>
