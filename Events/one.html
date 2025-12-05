@@ -22,17 +22,20 @@
                     alt=""></li>
             <li><img width="200px" id="owl"
                     src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
-                    alt="" onclick="onSubmit()"></li>
+                    alt=""></li>
+            <!-- <li><img width="200px" id="owl"
+                    src="https://images.pexels.com/photos/3532552/pexels-photo-3532552.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
+                    alt="" onclick="onSubmit()"></li> -->
             <li><img width="200px" id="prayer"
                     src="https://images.pexels.com/photos/2522671/pexels-photo-2522671.jpeg?auto=compress&cs=tinysrgb&w=1600&lazy=load"
                     alt=""></li>
-            <li><a style="color: aliceblue;" href="https://google.com"  id="google">Google</a></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">Google</a></li>
         </ul>
     </div>
     <button id="test">click me</button>
     <button id="test1">click me</button>
 </body>
-<script>
+<!-- <script>
 
     document.getElementById("photoshop").onclick = function (e) {
         console.log(e, "photo");
@@ -77,6 +80,24 @@ document.getElementById("google").addEventListener("click", function(e){
     // target, toElement, srcElement, currentTarget,
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
+
+</script> -->
+<script>
+    let images = document.getElementById("images");
+    images.addEventListener('click', function (e) {
+        console.log(e.target.tagName);
+        if (e.target.tagName == "IMG") {
+            // e.target.parentElement.remove();
+            let removeIt= e.target.parentNode;
+            console.log(removeIt);
+            
+            removeIt.parentNode.removeChild(removeIt);
+        }
+
+
+    })
+
+    // Event propagation : bubbling and capturing
 
 </script>
 

@@ -6,6 +6,7 @@ let submitBtn = document.getElementById("subt");
 let guessArray = document.querySelector(".guesses");
 let attempts = document.querySelector(".lastResult");
 let lowhi = document.querySelector(".lowOrHi");
+let paras= document.querySelector(".resultParas");
 
 let p = document.createElement("p");
 
@@ -75,9 +76,34 @@ function displayMessage(message) {
 
 
 function endGame() {
-  //
+    userInput.value = "";
+    submitBtn.setAttribute("disabled","");
+    userInput.setAttribute("disabled","");
+    p.classList.add('button');
+    p.innerHTML= `<h2 id="startbtn">NEW GAME</h2>`;
+    paras.appendChild(p);
+    playGame = false;
+    startGame();
+
+
+
+  
 }
 
 function startGame() {
-  //
+    let button = document.getElementById("startbtn");
+    button.addEventListener('click',function(){
+        console.log("click");
+        prevArray = [];
+        numGuess = 0;
+        p.innerHTML= "";
+        guessArray.innerHTML= "";
+        attempts.innerHTML= `${10 - numGuess}`;
+        lowhi.innerHTML= "";
+        userInput.removeAttribute("disabled");
+        submitBtn.removeAttribute("disabled");
+         playGame = true;
+        randomNumber = Math.floor(Math.random() * 100 + 1);
+    })
+  
 }
