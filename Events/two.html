@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Heelo</h1>
+    <button>Click to destory</button>
+</body>
+<script>
+
+function heelo(){
+     document.querySelector("h1").innerHTML= "Heelo from setTimeout";
+     console.log("out ");
+     
+}
+
+let clearme= setTimeout(heelo,2000)
+
+document.querySelector("button").onclick= function(){
+clearTimeout(clearme);
+console.log("cancel");
+
+}
+
+
+
+
+</script>
+</html>
+
+<!-- let number= [0,1,2,3,4,5,6,7,8,9];
+for(let i=0;i<number.length;i++){
+   Let color="#"
+   color.push
+} -->
